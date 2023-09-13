@@ -22,7 +22,7 @@ app.get('*',function(_,res){
 const connect = () => {
   mongoose.set("strictQuery", false);
   mongoose
-    .connect(process.env.MONGO)
+    .connect("mongodb+srv://jsrivastava045:iUvns1MpqXXkOT1i@cluster0.lxzhvzp.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
       console.log("connect to mongodb database");
     })
